@@ -16,14 +16,13 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-              echo 'Deployed!'
+              eco 'Deployed!'
             }
         }
     }
-
-    // post {
-    //     failure {
-    //         error 'Pipeline Failed'
-    //     }
-    // }
+    post {
+        failure {
+            error 'Pipeline Failed'
+        }
+    }
 }
