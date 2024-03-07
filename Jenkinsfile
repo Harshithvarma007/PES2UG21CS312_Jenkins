@@ -21,9 +21,9 @@ pipeline {
         }
     }
 
-    post {
-        // failure {
-        //     error 'Pipeline Failed'
-        // }
-    }
+    // post {
+    //     failure {
+    //         error 'Pipeline Failed'
+    //     }
+    // }
 }
